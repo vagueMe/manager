@@ -1,11 +1,13 @@
 package com.springboot.manager.model.generator;
 
+import java.io.Serializable;
+
 /**
  *   省
  *   province
  * @mbg.generated do_not_delete_during_merge
  */
-public class Province {
+public class Province implements Serializable {
     /**
      *   province.ProvinceId
      * @mbg.generated
