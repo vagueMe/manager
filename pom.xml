@@ -77,6 +77,8 @@
             <artifactId>ehcache</artifactId>
         </dependency>
 
+
+
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok  // 实体类中get 和set的便利引入 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -84,6 +86,14 @@
             <version>1.16.20</version>
             <scope>provided</scope>
         </dependency>
+
+
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.5</version>
+		</dependency>
 
 
     </dependencies>
