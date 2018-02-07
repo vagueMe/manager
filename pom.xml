@@ -43,11 +43,10 @@
 			<version>8.0.9-rc</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis mybatis依赖-->
 		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>3.4.5</version>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.1</version>
 		</dependency>
 
 
@@ -77,8 +76,6 @@
             <artifactId>ehcache</artifactId>
         </dependency>
 
-
-
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok  // 实体类中get 和set的便利引入 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -87,13 +84,14 @@
             <scope>provided</scope>
         </dependency>
 
-
-
+		<!-- Druid是Java语言中一种数据库连接池。Druid能够提供强大的监控和扩展功能-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
 			<version>1.1.5</version>
 		</dependency>
+
+
 
 
     </dependencies>
