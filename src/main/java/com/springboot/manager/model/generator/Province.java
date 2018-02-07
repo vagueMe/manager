@@ -7,7 +7,7 @@ import java.io.Serializable;
  *   province
  * @mbg.generated do_not_delete_during_merge
  */
-public class Province implements Serializable {
+public class Province  implements Serializable{
     /**
      *   province.ProvinceId
      * @mbg.generated
