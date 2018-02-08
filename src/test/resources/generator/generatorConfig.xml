@@ -44,6 +44,10 @@
             <property name="useActualColumnNames" value="false"/>
         </table>
 
+        <table schema="root" tableName="my_login" domainObjectName="Login">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+
     </context>
 
 </generatorConfiguration>
