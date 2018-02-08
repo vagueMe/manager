@@ -18,7 +18,6 @@ public class LombokGetSetTest {
     @Test
     public void test1(){
         UserDto userDto = new UserDto();
-        userDto.setAge(1);
         userDto.setUserId("id");
         userDto.setUserName("name");
 

@@ -1,8 +1,8 @@
 package com.springboot.manager.common;
 
-import com.springboot.manager.dao.generator.mytestdelete.UserMapper;
-import com.springboot.manager.model.generator.mytestdelete.User;
-import com.springboot.manager.model.generator.mytestdelete.UserExample;
+import com.springboot.manager.dao.generator.UserMapper;
+import com.springboot.manager.model.generator.User;
+import com.springboot.manager.model.generator.UserExample;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,17 +25,18 @@ public class DBOperateTest {
 
     @Test
     public void test() {
-        for(int i = 0;i<3;i++){
+       /* for(int i = 0;i<3;i++){
             User user = new User();
             user.setUserAge(i);
             user.setUserId("id"+i);
             user.setUserName("name"+i);
             userMapper.insertSelective(user);
             System.out.println(i);
-        }
-       /* UserExample userExample = new UserExample();
+        }*/
+        UserExample userExample = new UserExample();
         List<User> list = userMapper.selectByExample(userExample);
-        System.out.println(list.size());*/
+        System.out.println(list.size());
     }
+
 
 }
