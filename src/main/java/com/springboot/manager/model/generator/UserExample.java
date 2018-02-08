@@ -877,6 +877,76 @@ public class UserExample {
             addCriterion("user_is_delete not between", value1, value2, "userIsDelete");
             return (Criteria) this;
         }
+
+        public Criteria andUserMobileIsNull() {
+            addCriterion("user_mobile is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileIsNotNull() {
+            addCriterion("user_mobile is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileEqualTo(String value) {
+            addCriterion("user_mobile =", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileNotEqualTo(String value) {
+            addCriterion("user_mobile <>", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileGreaterThan(String value) {
+            addCriterion("user_mobile >", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileGreaterThanOrEqualTo(String value) {
+            addCriterion("user_mobile >=", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileLessThan(String value) {
+            addCriterion("user_mobile <", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileLessThanOrEqualTo(String value) {
+            addCriterion("user_mobile <=", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileLike(String value) {
+            addCriterion("user_mobile like", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileNotLike(String value) {
+            addCriterion("user_mobile not like", value, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileIn(List<String> values) {
+            addCriterion("user_mobile in", values, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileNotIn(List<String> values) {
+            addCriterion("user_mobile not in", values, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileBetween(String value1, String value2) {
+            addCriterion("user_mobile between", value1, value2, "userMobile");
+            return (Criteria) this;
+        }
+
+        public Criteria andUserMobileNotBetween(String value1, String value2) {
+            addCriterion("user_mobile not between", value1, value2, "userMobile");
+            return (Criteria) this;
+        }
     }
 
     /**

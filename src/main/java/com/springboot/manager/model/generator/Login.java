@@ -9,176 +9,176 @@ import java.util.Date;
 public class Login {
     /**
      *   用户id
-     *   my_login.my_login_user_id
+     *   my_login.login_user_id
      * @mbg.generated
      */
-    private String myLoginUserId;
+    private String loginUserId;
 
     /**
      *   登录用户名
-     *   my_login.my_login_name
+     *   my_login.login_name
      * @mbg.generated
      */
-    private String myLoginName;
+    private String loginName;
 
     /**
      *   登录密码
-     *   my_login.my_login_password
+     *   my_login.login_password
      * @mbg.generated
      */
-    private String myLoginPassword;
+    private String loginPassword;
 
     /**
      *   注册时间
-     *   my_login.my_login_create_time
+     *   my_login.login_create_time
      * @mbg.generated
      */
-    private Date myLoginCreateTime;
+    private Date loginCreateTime;
 
     /**
      *   修改时间
-     *   my_login.my_login_update_time
+     *   my_login.login_update_time
      * @mbg.generated
      */
-    private Date myLoginUpdateTime;
+    private Date loginUpdateTime;
 
     /**
      *   登录状态
-     *   my_login.my_login_status
+     *   my_login.login_status
      * @mbg.generated
      */
-    private Integer myLoginStatus;
+    private Integer loginStatus;
 
     /**
      *   是否删除：0-未删除，1-已删除
-     *   my_login.my_login_is_delete
+     *   my_login.login_is_delete
      * @mbg.generated
      */
-    private Boolean myLoginIsDelete;
+    private Boolean loginIsDelete;
 
     /**
      * 用户id
-     * @return the value of my_login.my_login_user_id
+     * @return the value of my_login.login_user_id
      * @mbg.generated
      */
-    public String getMyLoginUserId() {
-        return myLoginUserId;
+    public String getLoginUserId() {
+        return loginUserId;
     }
 
     /**
      * 用户id
-     * @param myLoginUserId the value for my_login.my_login_user_id
+     * @param loginUserId the value for my_login.login_user_id
      * @mbg.generated
      */
-    public void setMyLoginUserId(String myLoginUserId) {
-        this.myLoginUserId = myLoginUserId == null ? null : myLoginUserId.trim();
+    public void setLoginUserId(String loginUserId) {
+        this.loginUserId = loginUserId == null ? null : loginUserId.trim();
     }
 
     /**
      * 登录用户名
-     * @return the value of my_login.my_login_name
+     * @return the value of my_login.login_name
      * @mbg.generated
      */
-    public String getMyLoginName() {
-        return myLoginName;
+    public String getLoginName() {
+        return loginName;
     }
 
     /**
      * 登录用户名
-     * @param myLoginName the value for my_login.my_login_name
+     * @param loginName the value for my_login.login_name
      * @mbg.generated
      */
-    public void setMyLoginName(String myLoginName) {
-        this.myLoginName = myLoginName == null ? null : myLoginName.trim();
+    public void setLoginName(String loginName) {
+        this.loginName = loginName == null ? null : loginName.trim();
     }
 
     /**
      * 登录密码
-     * @return the value of my_login.my_login_password
+     * @return the value of my_login.login_password
      * @mbg.generated
      */
-    public String getMyLoginPassword() {
-        return myLoginPassword;
+    public String getLoginPassword() {
+        return loginPassword;
     }
 
     /**
      * 登录密码
-     * @param myLoginPassword the value for my_login.my_login_password
+     * @param loginPassword the value for my_login.login_password
      * @mbg.generated
      */
-    public void setMyLoginPassword(String myLoginPassword) {
-        this.myLoginPassword = myLoginPassword == null ? null : myLoginPassword.trim();
+    public void setLoginPassword(String loginPassword) {
+        this.loginPassword = loginPassword == null ? null : loginPassword.trim();
     }
 
     /**
      * 注册时间
-     * @return the value of my_login.my_login_create_time
+     * @return the value of my_login.login_create_time
      * @mbg.generated
      */
-    public Date getMyLoginCreateTime() {
-        return myLoginCreateTime;
+    public Date getLoginCreateTime() {
+        return loginCreateTime;
     }
 
     /**
      * 注册时间
-     * @param myLoginCreateTime the value for my_login.my_login_create_time
+     * @param loginCreateTime the value for my_login.login_create_time
      * @mbg.generated
      */
-    public void setMyLoginCreateTime(Date myLoginCreateTime) {
-        this.myLoginCreateTime = myLoginCreateTime;
+    public void setLoginCreateTime(Date loginCreateTime) {
+        this.loginCreateTime = loginCreateTime;
     }
 
     /**
      * 修改时间
-     * @return the value of my_login.my_login_update_time
+     * @return the value of my_login.login_update_time
      * @mbg.generated
      */
-    public Date getMyLoginUpdateTime() {
-        return myLoginUpdateTime;
+    public Date getLoginUpdateTime() {
+        return loginUpdateTime;
     }
 
     /**
      * 修改时间
-     * @param myLoginUpdateTime the value for my_login.my_login_update_time
+     * @param loginUpdateTime the value for my_login.login_update_time
      * @mbg.generated
      */
-    public void setMyLoginUpdateTime(Date myLoginUpdateTime) {
-        this.myLoginUpdateTime = myLoginUpdateTime;
+    public void setLoginUpdateTime(Date loginUpdateTime) {
+        this.loginUpdateTime = loginUpdateTime;
     }
 
     /**
      * 登录状态
-     * @return the value of my_login.my_login_status
+     * @return the value of my_login.login_status
      * @mbg.generated
      */
-    public Integer getMyLoginStatus() {
-        return myLoginStatus;
+    public Integer getLoginStatus() {
+        return loginStatus;
     }
 
     /**
      * 登录状态
-     * @param myLoginStatus the value for my_login.my_login_status
+     * @param loginStatus the value for my_login.login_status
      * @mbg.generated
      */
-    public void setMyLoginStatus(Integer myLoginStatus) {
-        this.myLoginStatus = myLoginStatus;
+    public void setLoginStatus(Integer loginStatus) {
+        this.loginStatus = loginStatus;
     }
 
     /**
      * 是否删除：0-未删除，1-已删除
-     * @return the value of my_login.my_login_is_delete
+     * @return the value of my_login.login_is_delete
      * @mbg.generated
      */
-    public Boolean getMyLoginIsDelete() {
-        return myLoginIsDelete;
+    public Boolean getLoginIsDelete() {
+        return loginIsDelete;
     }
 
     /**
      * 是否删除：0-未删除，1-已删除
-     * @param myLoginIsDelete the value for my_login.my_login_is_delete
+     * @param loginIsDelete the value for my_login.login_is_delete
      * @mbg.generated
      */
-    public void setMyLoginIsDelete(Boolean myLoginIsDelete) {
-        this.myLoginIsDelete = myLoginIsDelete;
+    public void setLoginIsDelete(Boolean loginIsDelete) {
+        this.loginIsDelete = loginIsDelete;
     }
 }

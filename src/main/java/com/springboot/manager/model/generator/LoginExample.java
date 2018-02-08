@@ -168,453 +168,453 @@ public class LoginExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
-        public Criteria andMyLoginUserIdIsNull() {
-            addCriterion("my_login_user_id is null");
+        public Criteria andLoginUserIdIsNull() {
+            addCriterion("login_user_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdIsNotNull() {
-            addCriterion("my_login_user_id is not null");
+        public Criteria andLoginUserIdIsNotNull() {
+            addCriterion("login_user_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdEqualTo(String value) {
-            addCriterion("my_login_user_id =", value, "myLoginUserId");
+        public Criteria andLoginUserIdEqualTo(String value) {
+            addCriterion("login_user_id =", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdNotEqualTo(String value) {
-            addCriterion("my_login_user_id <>", value, "myLoginUserId");
+        public Criteria andLoginUserIdNotEqualTo(String value) {
+            addCriterion("login_user_id <>", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdGreaterThan(String value) {
-            addCriterion("my_login_user_id >", value, "myLoginUserId");
+        public Criteria andLoginUserIdGreaterThan(String value) {
+            addCriterion("login_user_id >", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdGreaterThanOrEqualTo(String value) {
-            addCriterion("my_login_user_id >=", value, "myLoginUserId");
+        public Criteria andLoginUserIdGreaterThanOrEqualTo(String value) {
+            addCriterion("login_user_id >=", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdLessThan(String value) {
-            addCriterion("my_login_user_id <", value, "myLoginUserId");
+        public Criteria andLoginUserIdLessThan(String value) {
+            addCriterion("login_user_id <", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdLessThanOrEqualTo(String value) {
-            addCriterion("my_login_user_id <=", value, "myLoginUserId");
+        public Criteria andLoginUserIdLessThanOrEqualTo(String value) {
+            addCriterion("login_user_id <=", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdLike(String value) {
-            addCriterion("my_login_user_id like", value, "myLoginUserId");
+        public Criteria andLoginUserIdLike(String value) {
+            addCriterion("login_user_id like", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdNotLike(String value) {
-            addCriterion("my_login_user_id not like", value, "myLoginUserId");
+        public Criteria andLoginUserIdNotLike(String value) {
+            addCriterion("login_user_id not like", value, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdIn(List<String> values) {
-            addCriterion("my_login_user_id in", values, "myLoginUserId");
+        public Criteria andLoginUserIdIn(List<String> values) {
+            addCriterion("login_user_id in", values, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdNotIn(List<String> values) {
-            addCriterion("my_login_user_id not in", values, "myLoginUserId");
+        public Criteria andLoginUserIdNotIn(List<String> values) {
+            addCriterion("login_user_id not in", values, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdBetween(String value1, String value2) {
-            addCriterion("my_login_user_id between", value1, value2, "myLoginUserId");
+        public Criteria andLoginUserIdBetween(String value1, String value2) {
+            addCriterion("login_user_id between", value1, value2, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUserIdNotBetween(String value1, String value2) {
-            addCriterion("my_login_user_id not between", value1, value2, "myLoginUserId");
+        public Criteria andLoginUserIdNotBetween(String value1, String value2) {
+            addCriterion("login_user_id not between", value1, value2, "loginUserId");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameIsNull() {
-            addCriterion("my_login_name is null");
+        public Criteria andLoginNameIsNull() {
+            addCriterion("login_name is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameIsNotNull() {
-            addCriterion("my_login_name is not null");
+        public Criteria andLoginNameIsNotNull() {
+            addCriterion("login_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameEqualTo(String value) {
-            addCriterion("my_login_name =", value, "myLoginName");
+        public Criteria andLoginNameEqualTo(String value) {
+            addCriterion("login_name =", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameNotEqualTo(String value) {
-            addCriterion("my_login_name <>", value, "myLoginName");
+        public Criteria andLoginNameNotEqualTo(String value) {
+            addCriterion("login_name <>", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameGreaterThan(String value) {
-            addCriterion("my_login_name >", value, "myLoginName");
+        public Criteria andLoginNameGreaterThan(String value) {
+            addCriterion("login_name >", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameGreaterThanOrEqualTo(String value) {
-            addCriterion("my_login_name >=", value, "myLoginName");
+        public Criteria andLoginNameGreaterThanOrEqualTo(String value) {
+            addCriterion("login_name >=", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameLessThan(String value) {
-            addCriterion("my_login_name <", value, "myLoginName");
+        public Criteria andLoginNameLessThan(String value) {
+            addCriterion("login_name <", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameLessThanOrEqualTo(String value) {
-            addCriterion("my_login_name <=", value, "myLoginName");
+        public Criteria andLoginNameLessThanOrEqualTo(String value) {
+            addCriterion("login_name <=", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameLike(String value) {
-            addCriterion("my_login_name like", value, "myLoginName");
+        public Criteria andLoginNameLike(String value) {
+            addCriterion("login_name like", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameNotLike(String value) {
-            addCriterion("my_login_name not like", value, "myLoginName");
+        public Criteria andLoginNameNotLike(String value) {
+            addCriterion("login_name not like", value, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameIn(List<String> values) {
-            addCriterion("my_login_name in", values, "myLoginName");
+        public Criteria andLoginNameIn(List<String> values) {
+            addCriterion("login_name in", values, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameNotIn(List<String> values) {
-            addCriterion("my_login_name not in", values, "myLoginName");
+        public Criteria andLoginNameNotIn(List<String> values) {
+            addCriterion("login_name not in", values, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameBetween(String value1, String value2) {
-            addCriterion("my_login_name between", value1, value2, "myLoginName");
+        public Criteria andLoginNameBetween(String value1, String value2) {
+            addCriterion("login_name between", value1, value2, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginNameNotBetween(String value1, String value2) {
-            addCriterion("my_login_name not between", value1, value2, "myLoginName");
+        public Criteria andLoginNameNotBetween(String value1, String value2) {
+            addCriterion("login_name not between", value1, value2, "loginName");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordIsNull() {
-            addCriterion("my_login_password is null");
+        public Criteria andLoginPasswordIsNull() {
+            addCriterion("login_password is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordIsNotNull() {
-            addCriterion("my_login_password is not null");
+        public Criteria andLoginPasswordIsNotNull() {
+            addCriterion("login_password is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordEqualTo(String value) {
-            addCriterion("my_login_password =", value, "myLoginPassword");
+        public Criteria andLoginPasswordEqualTo(String value) {
+            addCriterion("login_password =", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordNotEqualTo(String value) {
-            addCriterion("my_login_password <>", value, "myLoginPassword");
+        public Criteria andLoginPasswordNotEqualTo(String value) {
+            addCriterion("login_password <>", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordGreaterThan(String value) {
-            addCriterion("my_login_password >", value, "myLoginPassword");
+        public Criteria andLoginPasswordGreaterThan(String value) {
+            addCriterion("login_password >", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordGreaterThanOrEqualTo(String value) {
-            addCriterion("my_login_password >=", value, "myLoginPassword");
+        public Criteria andLoginPasswordGreaterThanOrEqualTo(String value) {
+            addCriterion("login_password >=", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordLessThan(String value) {
-            addCriterion("my_login_password <", value, "myLoginPassword");
+        public Criteria andLoginPasswordLessThan(String value) {
+            addCriterion("login_password <", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordLessThanOrEqualTo(String value) {
-            addCriterion("my_login_password <=", value, "myLoginPassword");
+        public Criteria andLoginPasswordLessThanOrEqualTo(String value) {
+            addCriterion("login_password <=", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordLike(String value) {
-            addCriterion("my_login_password like", value, "myLoginPassword");
+        public Criteria andLoginPasswordLike(String value) {
+            addCriterion("login_password like", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordNotLike(String value) {
-            addCriterion("my_login_password not like", value, "myLoginPassword");
+        public Criteria andLoginPasswordNotLike(String value) {
+            addCriterion("login_password not like", value, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordIn(List<String> values) {
-            addCriterion("my_login_password in", values, "myLoginPassword");
+        public Criteria andLoginPasswordIn(List<String> values) {
+            addCriterion("login_password in", values, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordNotIn(List<String> values) {
-            addCriterion("my_login_password not in", values, "myLoginPassword");
+        public Criteria andLoginPasswordNotIn(List<String> values) {
+            addCriterion("login_password not in", values, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordBetween(String value1, String value2) {
-            addCriterion("my_login_password between", value1, value2, "myLoginPassword");
+        public Criteria andLoginPasswordBetween(String value1, String value2) {
+            addCriterion("login_password between", value1, value2, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginPasswordNotBetween(String value1, String value2) {
-            addCriterion("my_login_password not between", value1, value2, "myLoginPassword");
+        public Criteria andLoginPasswordNotBetween(String value1, String value2) {
+            addCriterion("login_password not between", value1, value2, "loginPassword");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeIsNull() {
-            addCriterion("my_login_create_time is null");
+        public Criteria andLoginCreateTimeIsNull() {
+            addCriterion("login_create_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeIsNotNull() {
-            addCriterion("my_login_create_time is not null");
+        public Criteria andLoginCreateTimeIsNotNull() {
+            addCriterion("login_create_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeEqualTo(Date value) {
-            addCriterion("my_login_create_time =", value, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeEqualTo(Date value) {
+            addCriterion("login_create_time =", value, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeNotEqualTo(Date value) {
-            addCriterion("my_login_create_time <>", value, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeNotEqualTo(Date value) {
+            addCriterion("login_create_time <>", value, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeGreaterThan(Date value) {
-            addCriterion("my_login_create_time >", value, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeGreaterThan(Date value) {
+            addCriterion("login_create_time >", value, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeGreaterThanOrEqualTo(Date value) {
-            addCriterion("my_login_create_time >=", value, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("login_create_time >=", value, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeLessThan(Date value) {
-            addCriterion("my_login_create_time <", value, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeLessThan(Date value) {
+            addCriterion("login_create_time <", value, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeLessThanOrEqualTo(Date value) {
-            addCriterion("my_login_create_time <=", value, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeLessThanOrEqualTo(Date value) {
+            addCriterion("login_create_time <=", value, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeIn(List<Date> values) {
-            addCriterion("my_login_create_time in", values, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeIn(List<Date> values) {
+            addCriterion("login_create_time in", values, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeNotIn(List<Date> values) {
-            addCriterion("my_login_create_time not in", values, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeNotIn(List<Date> values) {
+            addCriterion("login_create_time not in", values, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeBetween(Date value1, Date value2) {
-            addCriterion("my_login_create_time between", value1, value2, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeBetween(Date value1, Date value2) {
+            addCriterion("login_create_time between", value1, value2, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginCreateTimeNotBetween(Date value1, Date value2) {
-            addCriterion("my_login_create_time not between", value1, value2, "myLoginCreateTime");
+        public Criteria andLoginCreateTimeNotBetween(Date value1, Date value2) {
+            addCriterion("login_create_time not between", value1, value2, "loginCreateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeIsNull() {
-            addCriterion("my_login_update_time is null");
+        public Criteria andLoginUpdateTimeIsNull() {
+            addCriterion("login_update_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeIsNotNull() {
-            addCriterion("my_login_update_time is not null");
+        public Criteria andLoginUpdateTimeIsNotNull() {
+            addCriterion("login_update_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeEqualTo(Date value) {
-            addCriterion("my_login_update_time =", value, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeEqualTo(Date value) {
+            addCriterion("login_update_time =", value, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeNotEqualTo(Date value) {
-            addCriterion("my_login_update_time <>", value, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeNotEqualTo(Date value) {
+            addCriterion("login_update_time <>", value, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeGreaterThan(Date value) {
-            addCriterion("my_login_update_time >", value, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeGreaterThan(Date value) {
+            addCriterion("login_update_time >", value, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeGreaterThanOrEqualTo(Date value) {
-            addCriterion("my_login_update_time >=", value, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("login_update_time >=", value, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeLessThan(Date value) {
-            addCriterion("my_login_update_time <", value, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeLessThan(Date value) {
+            addCriterion("login_update_time <", value, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeLessThanOrEqualTo(Date value) {
-            addCriterion("my_login_update_time <=", value, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeLessThanOrEqualTo(Date value) {
+            addCriterion("login_update_time <=", value, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeIn(List<Date> values) {
-            addCriterion("my_login_update_time in", values, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeIn(List<Date> values) {
+            addCriterion("login_update_time in", values, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeNotIn(List<Date> values) {
-            addCriterion("my_login_update_time not in", values, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeNotIn(List<Date> values) {
+            addCriterion("login_update_time not in", values, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeBetween(Date value1, Date value2) {
-            addCriterion("my_login_update_time between", value1, value2, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeBetween(Date value1, Date value2) {
+            addCriterion("login_update_time between", value1, value2, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginUpdateTimeNotBetween(Date value1, Date value2) {
-            addCriterion("my_login_update_time not between", value1, value2, "myLoginUpdateTime");
+        public Criteria andLoginUpdateTimeNotBetween(Date value1, Date value2) {
+            addCriterion("login_update_time not between", value1, value2, "loginUpdateTime");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusIsNull() {
-            addCriterion("my_login_status is null");
+        public Criteria andLoginStatusIsNull() {
+            addCriterion("login_status is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusIsNotNull() {
-            addCriterion("my_login_status is not null");
+        public Criteria andLoginStatusIsNotNull() {
+            addCriterion("login_status is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusEqualTo(Integer value) {
-            addCriterion("my_login_status =", value, "myLoginStatus");
+        public Criteria andLoginStatusEqualTo(Integer value) {
+            addCriterion("login_status =", value, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusNotEqualTo(Integer value) {
-            addCriterion("my_login_status <>", value, "myLoginStatus");
+        public Criteria andLoginStatusNotEqualTo(Integer value) {
+            addCriterion("login_status <>", value, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusGreaterThan(Integer value) {
-            addCriterion("my_login_status >", value, "myLoginStatus");
+        public Criteria andLoginStatusGreaterThan(Integer value) {
+            addCriterion("login_status >", value, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusGreaterThanOrEqualTo(Integer value) {
-            addCriterion("my_login_status >=", value, "myLoginStatus");
+        public Criteria andLoginStatusGreaterThanOrEqualTo(Integer value) {
+            addCriterion("login_status >=", value, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusLessThan(Integer value) {
-            addCriterion("my_login_status <", value, "myLoginStatus");
+        public Criteria andLoginStatusLessThan(Integer value) {
+            addCriterion("login_status <", value, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusLessThanOrEqualTo(Integer value) {
-            addCriterion("my_login_status <=", value, "myLoginStatus");
+        public Criteria andLoginStatusLessThanOrEqualTo(Integer value) {
+            addCriterion("login_status <=", value, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusIn(List<Integer> values) {
-            addCriterion("my_login_status in", values, "myLoginStatus");
+        public Criteria andLoginStatusIn(List<Integer> values) {
+            addCriterion("login_status in", values, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusNotIn(List<Integer> values) {
-            addCriterion("my_login_status not in", values, "myLoginStatus");
+        public Criteria andLoginStatusNotIn(List<Integer> values) {
+            addCriterion("login_status not in", values, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusBetween(Integer value1, Integer value2) {
-            addCriterion("my_login_status between", value1, value2, "myLoginStatus");
+        public Criteria andLoginStatusBetween(Integer value1, Integer value2) {
+            addCriterion("login_status between", value1, value2, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginStatusNotBetween(Integer value1, Integer value2) {
-            addCriterion("my_login_status not between", value1, value2, "myLoginStatus");
+        public Criteria andLoginStatusNotBetween(Integer value1, Integer value2) {
+            addCriterion("login_status not between", value1, value2, "loginStatus");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteIsNull() {
-            addCriterion("my_login_is_delete is null");
+        public Criteria andLoginIsDeleteIsNull() {
+            addCriterion("login_is_delete is null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteIsNotNull() {
-            addCriterion("my_login_is_delete is not null");
+        public Criteria andLoginIsDeleteIsNotNull() {
+            addCriterion("login_is_delete is not null");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteEqualTo(Boolean value) {
-            addCriterion("my_login_is_delete =", value, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteEqualTo(Boolean value) {
+            addCriterion("login_is_delete =", value, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteNotEqualTo(Boolean value) {
-            addCriterion("my_login_is_delete <>", value, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteNotEqualTo(Boolean value) {
+            addCriterion("login_is_delete <>", value, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteGreaterThan(Boolean value) {
-            addCriterion("my_login_is_delete >", value, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteGreaterThan(Boolean value) {
+            addCriterion("login_is_delete >", value, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteGreaterThanOrEqualTo(Boolean value) {
-            addCriterion("my_login_is_delete >=", value, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteGreaterThanOrEqualTo(Boolean value) {
+            addCriterion("login_is_delete >=", value, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteLessThan(Boolean value) {
-            addCriterion("my_login_is_delete <", value, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteLessThan(Boolean value) {
+            addCriterion("login_is_delete <", value, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteLessThanOrEqualTo(Boolean value) {
-            addCriterion("my_login_is_delete <=", value, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteLessThanOrEqualTo(Boolean value) {
+            addCriterion("login_is_delete <=", value, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteIn(List<Boolean> values) {
-            addCriterion("my_login_is_delete in", values, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteIn(List<Boolean> values) {
+            addCriterion("login_is_delete in", values, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteNotIn(List<Boolean> values) {
-            addCriterion("my_login_is_delete not in", values, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteNotIn(List<Boolean> values) {
+            addCriterion("login_is_delete not in", values, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteBetween(Boolean value1, Boolean value2) {
-            addCriterion("my_login_is_delete between", value1, value2, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteBetween(Boolean value1, Boolean value2) {
+            addCriterion("login_is_delete between", value1, value2, "loginIsDelete");
             return (Criteria) this;
         }
 
-        public Criteria andMyLoginIsDeleteNotBetween(Boolean value1, Boolean value2) {
-            addCriterion("my_login_is_delete not between", value1, value2, "myLoginIsDelete");
+        public Criteria andLoginIsDeleteNotBetween(Boolean value1, Boolean value2) {
+            addCriterion("login_is_delete not between", value1, value2, "loginIsDelete");
             return (Criteria) this;
         }
     }

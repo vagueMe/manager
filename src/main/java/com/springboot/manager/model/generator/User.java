@@ -74,6 +74,12 @@ public class User {
     private Boolean userIsDelete;
 
     /**
+     *   my_user.user_mobile
+     * @mbg.generated
+     */
+    private String userMobile;
+
+    /**
      * @return the value of my_user.user_id
      * @mbg.generated
      */
@@ -247,5 +253,21 @@ public class User {
      */
     public void setUserIsDelete(Boolean userIsDelete) {
         this.userIsDelete = userIsDelete;
+    }
+
+    /**
+     * @return the value of my_user.user_mobile
+     * @mbg.generated
+     */
+    public String getUserMobile() {
+        return userMobile;
+    }
+
+    /**
+     * @param userMobile the value for my_user.user_mobile
+     * @mbg.generated
+     */
+    public void setUserMobile(String userMobile) {
+        this.userMobile = userMobile == null ? null : userMobile.trim();
     }
 }

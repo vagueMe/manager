@@ -12,12 +12,13 @@ import lombok.Data;
 @Data
 public class UserDto extends User{
 
-    @JsonProperty("password") //该注解可以使得返回前端的时候 字段变为 “password” 而不是原来的 userPassword
-    private String userPassword;
+    @JsonProperty("loginPassword") //该注解可以使得返回前端的时候 字段变为 “password” 而不是原来的 userPassword
+    private String loginPassword;
 
-    @JsonProperty("mobile")
-    private String userMobile;
+    @JsonProperty("loginStatus")
+    private String loginStatus;
 
+    private String loginName;
 
 
 
