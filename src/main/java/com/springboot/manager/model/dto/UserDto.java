@@ -16,7 +16,7 @@ public class UserDto extends User{
     private String loginPassword;
 
     @JsonProperty("loginStatus")
-    private String loginStatus;
+    private Integer loginStatus;
 
     private String loginName;
 

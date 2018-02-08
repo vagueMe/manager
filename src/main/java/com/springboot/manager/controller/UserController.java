@@ -1,9 +1,35 @@
 package com.springboot.manager.controller;
 
+import com.springboot.manager.model.dto.UserDto;
+import com.springboot.manager.model.protocols.ApiResult;
+import com.springboot.manager.model.protocols.BaseController;
+import com.springboot.manager.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * @Description：
  * @Author:hudi
  * @Date: Created in 10:38 2018/2/8
  */
-public class UserController {
+@RestController // 返回json数据
+@RequestMapping("/user")
+public class UserController extends BaseController {
+
+    @Autowired
+    private UserService userService;
+
+    @PostMapping("/register")
+    public ApiResult userRegister(UserDto userDto){
+        userService.register(userDto);
+        return success("注册成功");
+    }
+
+    @GetMapping("/getUser")
+    public ApiResult getUserList(String userId){
+        return success(userService.getUserDto(userId));
+    }
 }
