@@ -1,30 +1,30 @@
-package com.springboot.manager.model.generator.mytestdelete;
+package com.springboot.manager.model.generator;
 
 /**
- *   mytestdelete..user
+ *   my_user
  * @mbg.generated do_not_delete_during_merge
  */
 public class User {
     /**
-     *   mytestdelete..user.user_id
+     *   my_user.user_id
      * @mbg.generated
      */
     private String userId;
 
     /**
-     *   mytestdelete..user.user_name
+     *   my_user.user_name
      * @mbg.generated
      */
     private String userName;
 
     /**
-     *   mytestdelete..user.user_age
+     *   my_user.user_age
      * @mbg.generated
      */
     private Integer userAge;
 
     /**
-     * @return the value of mytestdelete..user.user_id
+     * @return the value of my_user.user_id
      * @mbg.generated
      */
     public String getUserId() {
@@ -32,7 +32,7 @@ public class User {
     }
 
     /**
-     * @param userId the value for mytestdelete..user.user_id
+     * @param userId the value for my_user.user_id
      * @mbg.generated
      */
     public void setUserId(String userId) {
@@ -40,7 +40,7 @@ public class User {
     }
 
     /**
-     * @return the value of mytestdelete..user.user_name
+     * @return the value of my_user.user_name
      * @mbg.generated
      */
     public String getUserName() {
@@ -48,7 +48,7 @@ public class User {
     }
 
     /**
-     * @param userName the value for mytestdelete..user.user_name
+     * @param userName the value for my_user.user_name
      * @mbg.generated
      */
     public void setUserName(String userName) {
@@ -56,7 +56,7 @@ public class User {
     }
 
     /**
-     * @return the value of mytestdelete..user.user_age
+     * @return the value of my_user.user_age
      * @mbg.generated
      */
     public Integer getUserAge() {
@@ -64,7 +64,7 @@ public class User {
     }
 
     /**
-     * @param userAge the value for mytestdelete..user.user_age
+     * @param userAge the value for my_user.user_age
      * @mbg.generated
      */
     public void setUserAge(Integer userAge) {

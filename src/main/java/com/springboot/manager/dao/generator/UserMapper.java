@@ -1,7 +1,7 @@
-package com.springboot.manager.dao.generator.mytestdelete;
+package com.springboot.manager.dao.generator;
 
-import com.springboot.manager.model.generator.mytestdelete.User;
-import com.springboot.manager.model.generator.mytestdelete.UserExample;
+import com.springboot.manager.model.generator.User;
+import com.springboot.manager.model.generator.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
