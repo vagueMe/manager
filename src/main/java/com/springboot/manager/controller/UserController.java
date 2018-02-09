@@ -5,10 +5,8 @@ import com.springboot.manager.model.protocols.ApiResult;
 import com.springboot.manager.model.protocols.BaseController;
 import com.springboot.manager.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 
 /**
  * @Description：
@@ -29,7 +27,8 @@ public class UserController extends BaseController {
     }
 
     @GetMapping("/getUser")
-    public ApiResult getUserList(String userId){
+    public ApiResult getUserList(@RequestParam(value="userId",defaultValue = "id0")String userId ){
+        System.out.println("88811");
         return success(userService.getUserDto(userId));
     }
 }
