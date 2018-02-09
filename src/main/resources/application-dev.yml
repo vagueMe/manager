@@ -1,0 +1,37 @@
+druid-public-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIEopNjvUKeGp5M+aKc+yY/a/PDYKI/O96U04PFFjmZ+ukTf00H0uU7mexYyLx0C6+opdKKdNJfdC94x+2fAdP8CAwEAAQ==
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://221.228.197.214:3306/mytestdelete?useSSL=false
+    username: root
+    password: KxU08WZP6Rwi+Ux7fMeUqMU27ojzMdkaicuxkmWeXbiVRX2az/WtAvfep3EavFetTC1hV6Ssve4PzGt//XPZmw==
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      filters: stat,wall
+      filter:
+        config:
+          enabled: true
+        stat:
+          enabled: true
+          statement-executable-sql-log-enable: true
+          db-type: mysql
+        wall:
+          enabled: true
+      connection-properties: config.decrypt=true;config.decrypt.key=${druid-public-key}
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 0
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: 20
+      rscoreToCamelCase: true
+server:
+  port: 8081
