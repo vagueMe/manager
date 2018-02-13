@@ -6,6 +6,10 @@ import com.springboot.manager.model.protocols.BaseController;
 import com.springboot.manager.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -30,5 +34,12 @@ public class UserController extends BaseController {
     public ApiResult getUserList(@RequestParam(value="userId",defaultValue = "id0")String userId ){
         System.out.println("88811");
         return success(userService.getUserDto(userId));
+    }
+
+    @GetMapping("/getUserFream")
+    public ModelAndView getUserFream(@RequestParam(value="userId",defaultValue = "id0")String userId ){
+        Map<String ,Object> map = new HashMap<>();
+        map.put("users",userService.getUserDto(userId));
+        return new ModelAndView("example",map);
     }
 }
