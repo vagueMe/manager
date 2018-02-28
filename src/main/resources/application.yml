@@ -27,8 +27,16 @@ spring:
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
       rscoreToCamelCase: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
 
 
 #使得返回结果是null时，不返回
 jackson:
   default-property-inclusion: non_null
+
+awesome:
+  jwt:
+    base64EncodedSecretKey: awesomeSecretKey
+    issuer: awesomeApp
