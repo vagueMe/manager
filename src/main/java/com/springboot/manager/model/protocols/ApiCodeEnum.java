@@ -8,7 +8,9 @@ package com.springboot.manager.model.protocols;
  */
 public enum ApiCodeEnum {
     SUCCESS(1,"成功"),
-    FAILURE(-1,"失败");
+    FAILURE(-1,"失败"),
+    TOKEN_INVALID(103, "token无效"),
+    PWD_MISTAKE(104, "账号密码不正确");
 
     private Integer code;
 
