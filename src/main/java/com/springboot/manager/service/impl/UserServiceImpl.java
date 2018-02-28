@@ -1,7 +1,5 @@
 package com.springboot.manager.service.impl;
 
-import com.alibaba.fastjson.JSON;
-import com.springboot.manager.adapterAnd.AuthInterceptor;
 import com.springboot.manager.adapterAnd.AuthToken;
 import com.springboot.manager.common.CommonUtils;
 import com.springboot.manager.common.security.SecurityUtils;
@@ -12,12 +10,10 @@ import com.springboot.manager.model.dto.UserDto;
 import com.springboot.manager.model.generator.Login;
 import com.springboot.manager.model.generator.LoginExample;
 import com.springboot.manager.model.generator.User;
-import com.springboot.manager.model.generator.UserExample;
 import com.springboot.manager.model.protocols.AnyException;
 import com.springboot.manager.model.protocols.ApiCodeEnum;
 import com.springboot.manager.model.protocols.AuthUser;
 import com.springboot.manager.service.UserService;
-import org.apache.catalina.security.SecurityUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

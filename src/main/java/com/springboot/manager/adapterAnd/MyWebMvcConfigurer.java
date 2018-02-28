@@ -19,15 +19,4 @@ public class MyWebMvcConfigurer extends WebMvcConfigurerAdapter {
                 // 拦截配置
                 .addPathPatterns("/**");
     }
-
-
-//    @Override
-//    public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(new AuthInterceptor())
-//                // 排除配置
-//                .excludePathPatterns("/login/**")
-//                .excludePathPatterns("/openapi*/**") //对于开放式API暂时放开认证，提供给TMS使用
-//                // 拦截配置
-//                .addPathPatterns("/**");
-//    }
 }

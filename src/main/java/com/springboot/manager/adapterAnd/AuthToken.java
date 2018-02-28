@@ -6,12 +6,13 @@ import com.springboot.manager.model.protocols.AnyException;
 import com.springboot.manager.model.protocols.ApiCodeEnum;
 import com.springboot.manager.model.protocols.AuthUser;
 import com.springboot.manager.properties.JwtProperties;
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtBuilder;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.xml.bind.DatatypeConverter;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 

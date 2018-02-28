@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ConfigurationProperties(prefix = "awesome.jwt")
+@ConfigurationProperties(prefix ="awesome.jwt")
 @EnableConfigurationProperties(JwtProperties.class)
 public class JwtProperties {
     private String base64EncodedSecretKey;

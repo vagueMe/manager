@@ -1,9 +1,7 @@
 package com.springboot.manager.adapterAnd;
 
 import com.springboot.manager.model.protocols.AuthUser;
-import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
