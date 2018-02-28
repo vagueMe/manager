@@ -2,6 +2,7 @@ package com.springboot.manager.service;
 
 import com.springboot.manager.model.dto.UserDto;
 import com.springboot.manager.model.generator.User;
+import com.springboot.manager.model.protocols.AuthUser;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +22,7 @@ public interface UserService {
 
     //List<User> getUserList();
 
-    boolean login(UserDto userDto);
+    AuthUser login(String userName ,String password);
+
 
 }

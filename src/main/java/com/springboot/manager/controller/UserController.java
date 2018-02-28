@@ -32,7 +32,6 @@ public class UserController extends BaseController {
 
     @GetMapping("/getUser")
     public ApiResult getUserList(@RequestParam(value="userId",defaultValue = "id0")String userId ){
-        System.out.println("88811");
         return success(userService.getUserDto(userId));
     }
 
