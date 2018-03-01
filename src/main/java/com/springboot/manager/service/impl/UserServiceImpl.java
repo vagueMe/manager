@@ -97,4 +97,25 @@ public class UserServiceImpl  implements UserService{
         return authUser;
     }
 
+    @Override
+    public AuthUser redisIn(String userName, String password) {
+        password = SecurityUtils.encrypt(password);
+        LoginExample loginExample = new LoginExample();
+        loginExample.createCriteria().andLoginNameEqualTo(userName).andLoginPasswordEqualTo(password);
+        Login login = loginMapper.selectByExample(loginExample).stream().findFirst().orElse(null);
+        if(login == null ){
+            throw new AnyException(ApiCodeEnum.PWD_MISTAKE);
+        }
+        User user = userMapper.selectByPrimaryKey(login.getLoginUserId());
+        if(user == null){
+            throw new AnyException(ApiCodeEnum.PWD_MISTAKE);
+        }
+        AuthUser authUser = new AuthUser();
+        authUser.setUserName(userName);
+        authUser.setUserId(user.getUserId());
+
+        authUser = AuthToken.createRedisToken(authUser);
+        return authUser;
+    }
+
 }

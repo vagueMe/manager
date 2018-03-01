@@ -2,6 +2,9 @@ package com.springboot.manager.adapterAnd;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.springboot.manager.common.CommonUtils;
+import com.springboot.manager.common.RedisUtils;
+import com.springboot.manager.conf.Constant;
 import com.springboot.manager.model.protocols.AnyException;
 import com.springboot.manager.model.protocols.ApiCodeEnum;
 import com.springboot.manager.model.protocols.AuthUser;
@@ -12,9 +15,12 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
 
 import java.util.Date;
 import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Description：
@@ -28,6 +34,7 @@ public class AuthToken {
 
 
     public static JwtProperties jwtProperties ;
+
 
     @Autowired
     private  void setJwtProperties(JwtProperties jwtProperties) {
@@ -76,6 +83,31 @@ public class AuthToken {
         }
        return authUser;
     }
+
+    public static AuthUser createRedisToken(AuthUser authuser){
+        RedisUtils redisUtils = new RedisUtils();
+        Set<String> keyset = redisUtils.keys(authuser.getUserName());
+        keyset.stream().forEach(key ->redisUtils.del(key));
+        String token = authuser.getUserName()+"_"+CommonUtils.uuid();
+        authuser.setToken(token);
+        redisUtils.hset(authuser.getToken(), Constant.USER_INFO, JSON.toJSONString(authuser));
+        redisUtils.expire(authuser.getToken(),Constant.TOKEN_TTLMILLIS, TimeUnit.HOURS);
+        return authuser;
+    }
+
+    public static AuthUser praseRedisToken(String token){
+        RedisUtils redisUtils = new RedisUtils();
+        String authuserJsonString = ObjectUtils.nullSafeToString(redisUtils.hget(token, Constant.USER_INFO));
+        AuthUser authuser = JSON.parseObject(authuserJsonString,AuthUser.class);
+        if(authuser != null){
+            redisUtils.expire(token, Constant.TOKEN_TTLMILLIS, TimeUnit.HOURS);
+        }else{
+            throw new AnyException(ApiCodeEnum.TOKEN_INVALID);
+        }
+        return authuser;
+    }
+
+
 
 
 

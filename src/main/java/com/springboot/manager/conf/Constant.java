@@ -10,4 +10,6 @@ public class Constant {
      * TOKEN过期时间
      */
     public static final long TOKEN_TTLMILLIS = 1000 * 60 * 60 * 2L;
+
+    public static final String USER_INFO = "user_info";//用户基本信息
 }

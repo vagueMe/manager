@@ -15,10 +15,25 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class AuthInterceptor extends HandlerInterceptorAdapter {
 
-    @Override
+ /*   @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String token = request.getHeader("token");
         AuthUser authUser = AuthToken.praseJWTToken(token);
+        log.info("{} {}[{}]",request.getRequestURI(),authUser.getUserName(),authUser.getToken());
+        AuthToken.theadUser.set(authUser);
+        return true;
+    }
+
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        AuthToken.theadUser.remove();
+    }
+*/
+
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        String token = request.getHeader("token");
+        AuthUser authUser = AuthToken.praseRedisToken(token);
         log.info("{} {}[{}]",request.getRequestURI(),authUser.getUserName(),authUser.getToken());
         AuthToken.theadUser.set(authUser);
         return true;

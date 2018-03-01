@@ -28,8 +28,20 @@ spring:
       max-pool-prepared-statement-per-connection-size: 20
       rscoreToCamelCase: true
   redis:
-    host: 127.0.0.1
+    host: 192.168.1.26
     port: 6379
+    password: zuDz9mGGqkAbApEUWAy6
+    database: 11
+    timeout: 3000
+
+mybatis:
+  configuration:
+    callSettersOnNulls: true
+    mapUnderscoreToCamelCase: true
+
+logging:
+  level:
+    com.springboot.manager.dao: trace
 
 
 #使得返回结果是null时，不返回

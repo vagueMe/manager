@@ -24,5 +24,8 @@ public interface UserService {
 
     AuthUser login(String userName ,String password);
 
+    AuthUser redisIn(String userName ,String password);
+
+
 
 }

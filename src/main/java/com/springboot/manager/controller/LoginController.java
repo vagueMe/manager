@@ -39,5 +39,14 @@ public class LoginController extends BaseController {
     }
 
 
+    @PostMapping("/redisIn")
+    public ApiResult redisIn (HttpServletRequest request , HttpServletResponse response ,String userName ,String password){
+        AuthUser authUser = userService.redisIn(userName,password);
+        if ("fail".equals(authUser.getToken()) || "".equals(authUser.getToken()) ) {
+            return error("用户名或密码不正确");
+        }
+        return success("登录成功",authUser);
+    }
+
 
 }
