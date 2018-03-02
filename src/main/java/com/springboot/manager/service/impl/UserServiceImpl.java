@@ -1,12 +1,16 @@
 package com.springboot.manager.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.springboot.manager.adapterAnd.AuthToken;
 import com.springboot.manager.common.CommonUtils;
 import com.springboot.manager.common.security.SecurityUtils;
 import com.springboot.manager.conf.Constant;
+import com.springboot.manager.dao.cunstom.UserCuMapper;
 import com.springboot.manager.dao.generator.LoginMapper;
 import com.springboot.manager.dao.generator.UserMapper;
 import com.springboot.manager.model.dto.UserDto;
+import com.springboot.manager.model.form.UserForm;
 import com.springboot.manager.model.generator.Login;
 import com.springboot.manager.model.generator.LoginExample;
 import com.springboot.manager.model.generator.User;
@@ -35,6 +39,9 @@ public class UserServiceImpl  implements UserService{
 
     @Autowired
     private LoginMapper loginMapper;
+
+    @Autowired
+    private UserCuMapper userCuMapper;
 
     @Override
     public void register(UserDto userDto) {
@@ -116,6 +123,13 @@ public class UserServiceImpl  implements UserService{
 
         authUser = AuthToken.createRedisToken(authUser);
         return authUser;
+    }
+
+    @Override
+    public PageInfo selectLimit(UserForm userForm) {
+        PageHelper.startPage(userForm);
+        PageInfo pageInfo =  new PageInfo(userCuMapper.selectLimit(userForm));
+        return pageInfo;
     }
 
 }

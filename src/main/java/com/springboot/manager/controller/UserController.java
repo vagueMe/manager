@@ -1,6 +1,7 @@
 package com.springboot.manager.controller;
 
 import com.springboot.manager.model.dto.UserDto;
+import com.springboot.manager.model.form.UserForm;
 import com.springboot.manager.model.protocols.ApiResult;
 import com.springboot.manager.model.protocols.BaseController;
 import com.springboot.manager.service.UserService;
@@ -41,4 +42,11 @@ public class UserController extends BaseController {
         map.put("users",userService.getUserDto(userId));
         return new ModelAndView("example",map);
     }
+
+
+    @GetMapping("/selectLimit")
+    public ApiResult selectLimit(UserForm userForm){
+        return success(userService.selectLimit(userForm));
+    }
+
 }

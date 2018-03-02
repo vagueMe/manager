@@ -1,6 +1,8 @@
 package com.springboot.manager.service;
 
+import com.github.pagehelper.PageInfo;
 import com.springboot.manager.model.dto.UserDto;
+import com.springboot.manager.model.form.UserForm;
 import com.springboot.manager.model.generator.User;
 import com.springboot.manager.model.protocols.AuthUser;
 import org.springframework.stereotype.Service;
@@ -25,6 +27,8 @@ public interface UserService {
     AuthUser login(String userName ,String password);
 
     AuthUser redisIn(String userName ,String password);
+
+    PageInfo selectLimit(UserForm userForm);
 
 
 
