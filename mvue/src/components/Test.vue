@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <button @click="get()">接收信息</button><br>
-    <span :class="{'a':'A','b':'B','c':'C','d':'D'}[msg]">this is test</span>
-    <father value1="hahah" :value2 = "value2"></father>
+    <span  :class="{'a':'A','b':'B','c':'C','d':'D'}[msg]">this is test</span>
+    <span ref="select">这是dom选着示例</span>
+    <father ref = "componSelect" value1="hahah" :value2 = "value2"></father>
   </div>
 </template>
 
@@ -26,6 +27,14 @@ export default {
   },
   components: {
     'father': fatherVue
+  },
+  created(){
+    console.log(this.$refs.select);
+    console.log(this.$refs.componSelect);
+  },
+  mounted(){
+    console.log(this.$refs.select);
+    console.log(this.$refs.componSelect.$el);
   }
 }
 </script>
