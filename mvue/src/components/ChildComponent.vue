@@ -24,7 +24,7 @@
     },
     props: ['value1','value2'],
     filters: {
-      matchFilter:function (param) {
+      matchFilter (param) {
         return "this is a filter";
       }
     }
