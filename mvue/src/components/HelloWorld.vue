@@ -80,6 +80,7 @@
         </a>
       </li>
     </ul>
+    <el-button type="primary" @click="nextPage">上一页</el-button>
   </div>
 </template>
 
@@ -88,8 +89,17 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      id:''
     }
+  },
+  methods:{
+    nextPage(){
+      this.$router.go(-1);
+    }
+  },
+  created(){
+    console.log(this.$route.query);
   }
 }
 </script>
