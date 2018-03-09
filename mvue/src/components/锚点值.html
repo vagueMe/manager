@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      div {
+        height: 30px;
+      }
+    </style>
+</head>
+<body>
+  <div class="a">上</div>
+  <div class="a" id = "test">中</div>
+  <div class="a">下</div>
+</body>
+<script>
+  window.addEventListener("hashchange" ,function(){
+      var connent = "";
+      switch(location.hash){
+        case "#/up" :
+          connent = "up";
+          break;
+        case "#/down" :
+          connent = "down";
+          break;
+      }
+      document.getElementById("test").innerHTML = connent;
+  })
+
+</script>
+</html>
