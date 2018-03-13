@@ -11,12 +11,16 @@
     <router-link :to="{name:'Child',params:{id:123}}">routerlink :to params </router-link><br>
     <el-button type="primary" @click="nextClick">router.push</el-button>
     <el-button type="primary" @click="nextPage">下一页</el-button>
+    <br>
+    <router-link :to="{name : 'childRouter1'}">子路由1</router-link> <router-link :to="{name : 'childRouter2'}">子路由2</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import fatherVue from './ChildComponent.vue'
 import connector from '../Js/childComponJs.js'
+
 export default {
   name: 'HelloWorld',
   data () {

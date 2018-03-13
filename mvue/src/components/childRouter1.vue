@@ -1,10 +1,10 @@
 <template>
-  <div>这里是子路由页面2222222</div>
+<div>这里是子路由页面1111</div>
 </template>
 
 <script>
     export default {
-        name: "child-router2"
+        name: "child-router1"
     }
 </script>
 

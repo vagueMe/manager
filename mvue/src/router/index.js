@@ -19,8 +19,8 @@ export default new Router({
         'headerVue': HeaderVue
       },
       children:[
-        {path: '/childRouter1', name: 'childRouter1', component: ChildRouter1},
-        {path: '/childRouter2', name: 'childRouter2', component: ChildRouter2}
+        {path: '/childRouter1', name: 'childRouter1', component: ChildRouter1 },
+        {path: '/childRouter2', name: 'childRouter2', component: ChildRouter2 }
       ]
     },
     {
