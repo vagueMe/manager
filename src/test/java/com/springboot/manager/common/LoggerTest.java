@@ -8,6 +8,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 /**
  * @Description：
@@ -29,6 +32,25 @@ public class LoggerTest {
         logger.error("333");
 
         log.info("111"); // 这里是使用的是 lombak 的@Log4j 注解生成的log对象  注：在使用lombak 之前idea要先安装插件
+    }
+
+    @Test
+    public  void test2()  {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        try{
+            Date date1 = simpleDateFormat.parse("2019-01-12 18:04:30"); //  60000 yifenz
+
+            Date date2 = simpleDateFormat.parse("2019-01-12 18:06:30");
+
+            System.out.println(date1.getTime());
+            System.out.println(date2.getTime());
+            System.out.println(date2.getTime() - date1.getTime());
+            long info = Math.abs(date2.getTime() - date1.getTime()) / 60000;
+            System.out.println(info);
+        }catch (Exception e){
+
+        }
+
     }
 
 }

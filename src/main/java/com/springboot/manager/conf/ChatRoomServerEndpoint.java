@@ -20,8 +20,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author sam
  * @since 2017/9/13
  */
-@ServerEndpoint("/ws/chatRoom/{userName}") //WebSocket客户端建立连接的地址
-@Component
+/*@ServerEndpoint("/ws/chatRoom/{userName}") //WebSocket客户端建立连接的地址
+@Component */
 public class ChatRoomServerEndpoint {
 
     /**
