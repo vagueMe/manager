@@ -84,6 +84,7 @@ public class UserServiceImpl  implements UserService{
 
     @Override
     public AuthUser login(String userName, String password) {
+        System.out.println("分支redist==========");
         password = SecurityUtils.encrypt(password);
         LoginExample loginExample = new LoginExample();
         loginExample.createCriteria().andLoginNameEqualTo(userName).andLoginPasswordEqualTo(password);
