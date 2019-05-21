@@ -78,7 +78,6 @@ public class UserServiceImpl  implements UserService{
     @Override
     public AuthUser login(String userName, String password) {
         password = SecurityUtils.encrypt(password);
-        System.out.println("分支redist==========");
         LoginExample loginExample = new LoginExample();
         loginExample.createCriteria().andLoginNameEqualTo(userName).andLoginPasswordEqualTo(password);
         Login login = loginMapper.selectByExample(loginExample).stream().findFirst().orElse(null);
@@ -101,6 +100,7 @@ public class UserServiceImpl  implements UserService{
     @Override
     public AuthUser redisIn(String userName, String password) {
         password = SecurityUtils.encrypt(password);
+        System.out.println("分支redist==========");
         LoginExample loginExample = new LoginExample();
         loginExample.createCriteria().andLoginNameEqualTo(userName).andLoginPasswordEqualTo(password);
         Login login = loginMapper.selectByExample(loginExample).stream().findFirst().orElse(null);
